@@ -1,0 +1,207 @@
+USAGE
+-----
+
+./steersim.exe -module scenario,scenarioAI=egocentricAI
+
+PARAMETERS 
+----------
+
+generateRandomScenario(seed,index)
+- run rand() X * index times where X is the number of rands run for one scenario generation
+
+figure out the logger 
+- we want to be able to open in excel 
+- we also want to be able to process that data in steersuite 
+
+
+
+
+_radius = atof(m[1].str().c_str()); // radius of scenario -- radius of 7 means 14 X 14 word  
+_gridResX = atof(m[2].str().c_str()); // resolution of obstacle grid -- 
+_gridResY = atof(m[3].str().c_str());
+_maxAgents = atof(m[4].str().c_str());
+
+_minSpeed = atof(m[5].str().c_str());
+_maxSpeed = atof(m[6].str().c_str());
+
+_randomSeed = atof(m[7].str().c_str()); 
+
+1 = radius in m of the scenario 
+2 = 
+
+scenarioAI= 
+	-> simpleAI
+	-> pprAI
+	-> egocentricAI (does not work on hammerhead)
+	-> RVOPlusAI (does not work)
+	-> stp (space time planner -- matt todo) 
+
+useBenchmark 
+
+benchmarkLog --> logs benchmark score to name specified
+
+benchmarkTechnique= 
+	-> composite01
+	-> composite02
+	-> composite03 (mubbasir todo -- theory of effort)
+	-> energyEfficiency 
+	-> accelerationEfficiency 
+	
+
+numScenarios 
+
+regions : a formatted string 
+High Level:  "region:region:region......"
+Region:   "angle,angleRes,radius,radiusRes"
+
+the angle starts from the forward vector of the agent and goes to 180 
+the sum of all angles should be <= 180
+
+
+
+TODO: 
+-----
+
+
+we need a method of constraining the space 
+- goals are 8 directions 
+- speed 
+- position in variable resolutuion form ? 
+- obstacle placement 
+
+
+scenario relevance ?????? 
+
+
+we want to compute optimal values of metrics 
+- path length 
+- time 
+... 
+
+
+
+
+MUBBASIR 
+
+- broken read/write in logger.cpp
+- not writing metadata in log file [scenarioModule.cpp]
+
+
+- rvo ai crashes after first scenario runs --> check if cleanup is proper 
+- crashing once all scenarios are processed 
+
+
+start angle, end angle, angle res, start radius, end radius, radius res 
+- we don't really need to split up radius 
+
+
+
+isScenarioValid () / isScenarioUseful ()
+ - check for collisions doAgentsCollide () // hopefully we can limit the generation algorithm not to generate such scenarios 
+   i.e. sample such that collisions dont exist
+ - is there a path to the goal canAgentsReachGoal ()
+   - even if a single agent cannot reach his goal, scenario is marked invalid --> can we consider out of the boundary of the scenario?
+ - do ALL agents ever interact ? (there might be subset of agents that interact -- we can assume that that scenario will have been generated earlier)
+   - if there is even one agent that is not useful, not a useful scenario 
+   - how do we determine if agents interact? 
+     --> the straight lines (p_1,g_1), ... (p_n,g_n) don't intersect / don't come too close 
+	 --> the  planned paths dont intersect (planning in this short area might not to be too expensive) 
+ - is the position of an obstacle of any use ?
+   - even if there is one obstacle positioned that is not useful, then we can safely ignore it. 
+
+are we making scenarios rotation invariant? i.e. are we generating scenarios that are basically rotated equivalents of one another ? 
+
+
+
+MATT 
+
+- obstacle sampling 
+- test the validity of a scenario that is generated 
+
+- expose parameters to command line 
+
+- we need to be able to programmatically determine the maximum number of scenarios --> cardinality of scenario space 
+	-> for starters, we can atleast have a number that you calculate from procedurally generating without simulating 
+
+- make region specification robust -- cater for overlapping regions and possibly uniform sampling of non specified regions 
+
+- ** points should be sampled so that agents never overlap ** 
+
+- 
+
+
+Paper outline
+-------------
+
+ABSTRACT 
+
+INTRODUCTION 
+
+
+- independent of algorithm, agent model (can use for complex models), and target application 
+(can add additional dimensions in scenario space, can use language to create your own scenarios) 
+
+
+RELATED WORK --> we might do away with this section 
+
+ai's that we will use 
+egocentric 
+ppr 
+rvo 
+
+steersuite 
+steerbench (both papers)
+
+
+
+SCENARIO SPACE 
+
+We define a scenario --> make this more general than just agents and obstacles, add agent properties(behaviors), goals, 
+Scenario space is .. 
+
+We need to sample the scenario space in a tractable fashion: (1) variable resolution, (2) scenario clustering, (3) defining irrelevant scenarios 
+
+- Discrete Scenario Representation 
+- Scenario Specification 
+   -> scripting language to describe constraints 
+		-> different metrics: 
+			-> environment size 
+			-> discretization (finest) 
+			-> number of obstacles 
+			-> number of agents 
+			-> min / max obstacle size --> we want to define narrow passageways, how would we do this? 
+			-> min / max distance between agents 
+
+
+   -> sketch tool 
+- Finding the right resolution --> isn't this a kind of clustering ? 
+- Scenario Relevance 
+   - we define the following scenarios to be irrelevant 
+      -> when there is no way for an agent to reach a goal? how can we easily determine this??? 
+	  -> when two agents will not interact --> lines (p1,g1) and (p2,g2) do not intersect 
+- Scenario Clustering / Similarity of scenarios 
+   - if we can define scenarios to be similar, scenarios whose similarity are above a threshold can 
+
+SCENARIO EVALUATION 
+
+- Effort Metrics
+- Optimal Values of Metrics 
+- Ground Truth 
+- Describing different agent models
+
+COVERAGE 
+
+
+USAGE 
+
+- Scenario Design 
+   e.g. narrow passageways, crowds, something more interesting --> 
+
+- Evaluating your AI on different types of scenarios 
+	-> pick one ai and test it on different sets of scenarios, see where it does well and where it fails.
+    -> 
+
+- Comparative Analysis of Three Steering Algorithms
+	-> here we just define the entire space, keep similarity threshold to be low 
+
+

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Assembly>E:\playground\SteerSuite\build\bin\RevitPlugin.dll</Assembly>
+    <AddInId>239BD853-36E4-461f-9171-C5ACEDA4E721</AddInId>
+    <FullClassName>RevitPlugin.Command</FullClassName>
+    <Text>Export Achitectural Graph</Text>
+    <VendorId>Anonomous</VendorId>
+    <VendorDescription>Anonomous</VendorDescription>
+    <VisibilityMode>AlwaysVisible</VisibilityMode>
+  </AddIn>
+  <AddIn Type="Command">
+    <Assembly>E:\playground\SteerSuite\build\bin\RevitPlugin.dll</Assembly>
+    <AddInId>239BD853-36E4-461f-9171-C5ACEDA4E722</AddInId>
+    <FullClassName>RevitPlugin.SteerSimulate</FullClassName>
+    <Text>Simulate Crowd</Text>
+    <VendorId>Anonomous</VendorId>
+    <VendorDescription>Anonomous</VendorDescription>
+    <VisibilityMode>AlwaysVisible</VisibilityMode>
+  </AddIn>
+  <AddIn Type="Command">
+    <Assembly>E:\playground\SteerSuite\build\bin\RevitPlugin.dll</Assembly>
+    <AddInId>239BD853-36E4-461f-9171-C5ACEDA4E723</AddInId>
+    <FullClassName>RevitPlugin.SteerOptimize</FullClassName>
+    <Text>Optimize</Text>
+    <VendorId>Anonomous</VendorId>
+    <VendorDescription>Anonomous</VendorDescription>
+    <VisibilityMode>AlwaysVisible</VisibilityMode>
+  </AddIn>
+  <AddIn Type="Command">
+    <Assembly>E:\playground\SteerSuite\build\bin\RevitPlugin.dll</Assembly>
+    <AddInId>239bd853-36e4-461f-9171-c5aceda4e724</AddInId>
+    <FullClassName>RevitPlugin.SteerOptimizeUITester</FullClassName>
+    <Text>Optimize UI</Text>
+    <VendorId>Anonomous</VendorId>
+    <VendorDescription>Anonomous</VendorDescription>
+    <VisibilityMode>AlwaysVisible</VisibilityMode>
+  </AddIn>
+</RevitAddIns>
