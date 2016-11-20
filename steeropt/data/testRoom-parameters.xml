@@ -1,0 +1,70 @@
+<!--
+  Copyright (c) 2009-2015  Glen Berseth, Mubbasir Kapadia, Shawn Singh, Petros Faloutsos, Glenn Reinman
+  See license.txt for complete license.
+--><parameterOptimitationExperiment>
+<!-- <parameter type="float" name="$1">\n\t\t\t<min type="float">1</min>\n\t\t\t<max type="float">5</max>\n\t\t\t<original type="float">2.6</original>\n\t\t\t<discretization type="float">20</discretization>\n\t\t</parameter> -->
+<!-- Current limitation is that all parameter need to be specified so the database
+does not fault on not having enough arguments to insert the data into the table. To
+compensate for this just name the discretization 0.
+
+
+For this we need to somehow include the constraint that we don't want the pillars
+to intersect. -->
+	 <env_config name="hallway-one-way-2pillar" >
+	 	<visibilityGraph>
+       		<region>
+       			<point><x>-50.0</x> <y>0</y> <z>-50.0</z></point>
+       			<point><x>50.0</x> <y>0</y> <z>50.0</z></point>
+       		</region>
+       	</visibilityGraph>
+       	<queryRegions>
+       		<region>
+       			<point><x>7.0</x> <y>0</y> <z>-2.0</z></point>
+       			<point><x>10.0</x> <y>0</y> <z>3.0</z></point>
+       		</region>
+       	</queryRegions>
+       	<referenceRegions>
+       		<region>
+       			<point><x>-10.0</x> <y>0</y> <z>-10.0</z></point>
+       			<point><x>-7.0</x> <y>0</y> <z>-7.0</z></point>
+       		</region>
+       		<region>
+       			<point><x>-10.0</x> <y>0</y> <z>7.0</z></point>
+       			<point><x>-7.0</x> <y>0</y> <z>10.0</z></point>
+       		</region>
+       	</referenceRegions>
+ 		<parameter type="float" name="p3_x">
+			<min type="float">-5.0</min>
+			<max type="float">5.0</max>
+			<original type="float">0</original>
+			<discretization type="float">20</discretization>
+			<translationDirection> <x>1</x> <y>0</y> <z>0</z> </translationDirection>
+			<node_ids>
+				<node>4</node>
+				<node>5</node>
+			</node_ids>
+		</parameter>
+		<parameter type="float" name="p3_x">
+			<min type="float">-5.0</min>
+			<max type="float">5.0</max>
+			<original type="float">0</original>
+			<discretization type="float">20</discretization>
+			<translationDirection> <x>1</x> <y>0</y> <z>0</z> </translationDirection>
+			<node_ids>
+				<node>6</node>
+				<node>7</node>
+			</node_ids>
+		</parameter>
+		<parameter type="float" name="p5_z">
+			<min type="float">-5.0</min>
+			<max type="float">5.0</max>
+			<original type="float">0</original>
+			<discretization type="float">20</discretization>
+			<translationDirection> <x>1</x> <y>0</y> <z>0</z> </translationDirection>
+			<node_ids>
+				<node>8</node>
+				<node>9</node>
+			</node_ids>
+		</parameter>
+	</env_config>
+</parameterOptimitationExperiment>

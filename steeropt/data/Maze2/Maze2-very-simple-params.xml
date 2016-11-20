@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Filename: E:\playground\SteerSuite\steeropt\data\Maze2\Maze2-very-simple-params.xml-->
+<!--Creation Date: 05.13.2016-01.15.16-->
+<!--Stores Optimization Parameters-->
+<parameterOptimitationExperiment>
+  <env_config>
+    <visibilityGraph>
+      <region>
+        <point>
+          <x>-2.04133184732794</x>
+          <y>0</y>
+          <z>-45.3500026321142</z>
+        </point>
+        <point>
+          <x>49.2066681526722</x>
+          <y>0</y>
+          <z>5.89799736788593</z>
+        </point>
+      </region>
+    </visibilityGraph>
+    <queryRegions>
+      <region>
+        <point>
+          <x>-0.5222577</x>
+          <y>0</y>
+          <z>4.289314</z>
+        </point>
+        <point>
+          <x>47.50838</x>
+          <y>0</y>
+          <z>-43.65171</z>
+        </point>
+      </region>
+    </queryRegions>
+    <referenceRegions>
+      <region>
+        <point>
+          <x>-0.4326483</x>
+          <y>0</y>
+          <z>4.378923</z>
+        </point>
+        <point>
+          <x>47.50838</x>
+          <y>0</y>
+          <z>-43.65171</z>
+        </point>
+      </region>
+    </referenceRegions>
+    <parameter type="float" name="p-1">
+      <min type="float">-4.34605540151778</min>
+      <max type="float">4.34605540151778</max>
+      <original type="float">0</original>
+      <discretization type="float">20</discretization>
+      <translationDirection>
+        <x>1</x>
+        <y>0</y>
+        <z>-2.74077003669176E-15</z>
+      </translationDirection>
+      <node_ids>
+        <node>174</node>
+        <node>173</node>
+        <node>175</node>
+      </node_ids>
+    </parameter>
+    <parameter type="float" name="p-2">
+      <min type="float">-4.07722723235173</min>
+      <max type="float">4.07722723235173</max>
+      <original type="float">0</original>
+      <discretization type="float">20</discretization>
+      <translationDirection>
+        <x>-1</x>
+        <y>0</y>
+        <z>2.62269240648963E-15</z>
+      </translationDirection>
+      <node_ids>
+        <node>113</node>
+        <node>34</node>
+        <node>172</node>
+      </node_ids>
+    </parameter>
+  </env_config>
+</parameterOptimitationExperiment>

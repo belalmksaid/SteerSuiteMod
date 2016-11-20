@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Filename: E:\playground\SteerSuite\steeropt\data\Maze2\Maze2-simple-params.xml-->
+<!--Creation Date: 05.13.2016-12.33.40-->
+<!--Stores Optimization Parameters-->
+<parameterOptimitationExperiment>
+  <env_config>
+    <visibilityGraph>
+      <region>
+        <point>
+          <x>-2.04133184732785</x>
+          <y>0</y>
+          <z>-13.3500026321141</z>
+        </point>
+        <point>
+          <x>17.2066681526722</x>
+          <y>0</y>
+          <z>5.89799736788593</z>
+        </point>
+      </region>
+    </visibilityGraph>
+    <queryRegions>
+      <region>
+        <point>
+          <x>-0.4442944</x>
+          <y>0</y>
+          <z>4.30096</z>
+        </point>
+        <point>
+          <x>15.60963</x>
+          <y>0</y>
+          <z>-11.72244</z>
+        </point>
+      </region>
+    </queryRegions>
+    <referenceRegions>
+      <region>
+        <point>
+          <x>-0.4442944</x>
+          <y>0</y>
+          <z>4.30096</z>
+        </point>
+        <point>
+          <x>15.60963</x>
+          <y>0</y>
+          <z>-11.72244</z>
+        </point>
+      </region>
+    </referenceRegions>
+    <parameter type="float" name="p-1">
+      <min type="float">-1.37343466267804</min>
+      <max type="float">1.37343466267804</max>
+      <original type="float">0</original>
+      <discretization type="float">20</discretization>
+      <translationDirection>
+        <x>1</x>
+        <y>0</y>
+        <z>-3.1537492353278E-15</z>
+      </translationDirection>
+      <node_ids>
+        <node>114</node>
+        <node>12</node>
+        <node>117</node>
+        <node>14</node>
+        <node>119</node>
+        <node>10</node>
+        <node>121</node>
+        <node>20</node>
+        <node>123</node>
+        <node>16</node>
+        <node>125</node>
+        <node>18</node>
+        <node>127</node>
+        <node>8</node>
+        <node>129</node>
+        <node>26</node>
+        <node>131</node>
+        <node>24</node>
+        <node>133</node>
+        <node>28</node>
+        <node>135</node>
+        <node>22</node>
+        <node>137</node>
+        <node>32</node>
+        <node>139</node>
+        <node>30</node>
+        <node>141</node>
+        <node>33</node>
+        <node>188</node>
+        <node>187</node>
+        <node>190</node>
+        <node>191</node>
+        <node>193</node>
+        <node>196</node>
+        <node>197</node>
+        <node>200</node>
+        <node>201</node>
+        <node>203</node>
+        <node>206</node>
+        <node>207</node>
+        <node>209</node>
+        <node>212</node>
+        <node>213</node>
+        <node>215</node>
+        <node>218</node>
+      </node_ids>
+    </parameter>
+     <parameter type="float" name="p-1">
+      <min type="float">-1.40395543295978</min>
+      <max type="float">1.40395543295978</max>
+      <original type="float">0</original>
+      <discretization type="float">20</discretization>
+      <translationDirection>
+        <x>-1</x>
+        <y>0</y>
+        <z>2.31389210200681E-15</z>
+      </translationDirection>
+      <node_ids>
+        <node>113</node>
+        <node>34</node>
+        <node>116</node>
+        <node>88</node>
+        <node>131</node>
+        <node>97</node>
+        <node>133</node>
+        <node>42</node>
+        <node>135</node>
+        <node>40</node>
+        <node>137</node>
+        <node>96</node>
+        <node>139</node>
+        <node>95</node>
+        <node>141</node>
+        <node>38</node>
+        <node>143</node>
+        <node>94</node>
+        <node>145</node>
+        <node>93</node>
+        <node>147</node>
+        <node>92</node>
+        <node>149</node>
+        <node>36</node>
+        <node>151</node>
+        <node>91</node>
+        <node>153</node>
+        <node>90</node>
+        <node>155</node>
+        <node>89</node>
+        <node>187</node>
+        <node>192</node>
+        <node>194</node>
+        <node>195</node>
+        <node>198</node>
+        <node>199</node>
+        <node>202</node>
+        <node>204</node>
+        <node>205</node>
+        <node>208</node>
+        <node>210</node>
+        <node>211</node>
+        <node>214</node>
+        <node>216</node>
+        <node>217</node>
+      </node_ids>
+    </parameter>
+  </env_config>
+</parameterOptimitationExperiment>

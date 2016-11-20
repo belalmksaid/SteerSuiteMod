@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Filename: E:\playground\SteerSuite\steeropt\data\METMuseum\met2_visibility_graph_region.xml-->
+<!--Creation Date: 05.15.2016-03.06.17-->
+<!--Stores Optimization Parameters-->
+<parameterOptimitationExperiment>
+  <env_config>
+    <visibilityGraph>
+      <region>
+        <point>
+          <x>-175.703860392201</x>
+          <y>0</y>
+          <z>-106.977736389063</z>
+        </point>
+        <point>
+          <x>175.703861091552</x>
+          <y>0</y>
+          <z>105.641692160872</z>
+        </point>
+      </region>
+    </visibilityGraph>
+    <queryRegions>
+      <region>
+        <point>
+          <x>40.14229</x>
+          <y>0</y>
+          <z>86.86629</z>
+        </point>
+        <point>
+          <x>160.0324</x>
+          <y>0</y>
+          <z>1.866341</z>
+        </point>
+      </region>
+    </queryRegions>
+  </env_config>
+</parameterOptimitationExperiment>

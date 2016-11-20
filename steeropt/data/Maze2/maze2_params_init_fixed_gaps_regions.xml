@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Filename: D:\playground\SteerSuite\steeropt\data\Maze2\maze2_params_init_fixed_gaps_regions.xml-->
+<!--Creation Date: 05.16.2016-12.17.20-->
+<!--Stores Optimization Parameters-->
+<parameterOptimitationExperiment>
+  <env_config>
+    <visibilityGraph>
+      <region>
+        <point>
+          <x>-2.04133185792287</x>
+          <y>0</y>
+          <z>-13.3020030684084</z>
+        </point>
+        <point>
+          <x>17.2066688030887</x>
+          <y>0</y>
+          <z>5.84999744359164</z>
+        </point>
+      </region>
+    </visibilityGraph>
+    <queryRegions>
+      <region>
+        <point>
+          <x>-0.3991621</x>
+          <y>0</y>
+          <z>-11.71847</z>
+        </point>
+        <point>
+          <x>15.60096</x>
+          <y>0</y>
+          <z>4.281651</z>
+        </point>
+      </region>
+    </queryRegions>
+    <referenceRegions>
+      <region>
+        <point>
+          <x>12.84484</x>
+          <y>0</y>
+          <z>-12.37702</z>
+        </point>
+        <point>
+          <x>15.33267</x>
+          <y>0</y>
+          <z>-10.96237</z>
+        </point>
+      </region>
+      <region>
+        <point>
+          <x>-0.1064769</x>
+          <y>0</y>
+          <z>-12.40141</z>
+        </point>
+        <point>
+          <x>2.381347</x>
+          <y>0</y>
+          <z>-10.98676</z>
+        </point>
+      </region>
+    </referenceRegions>
+  </env_config>
+</parameterOptimitationExperiment>

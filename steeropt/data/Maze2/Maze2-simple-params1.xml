@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Filename: E:\playground\SteerSuite\steeropt\data\Maze2\Maze2-simple-params1.xml-->
+<!--Creation Date: 05.13.2016-12.38.29-->
+<!--Stores Optimization Parameters-->
+<parameterOptimitationExperiment>
+  <env_config>
+    <parameter type="float" name="p-1">
+      <min type="float">-1.40395543295978</min>
+      <max type="float">1.40395543295978</max>
+      <original type="float">0</original>
+      <discretization type="float">20</discretization>
+      <translationDirection>
+        <x>-1</x>
+        <y>0</y>
+        <z>2.31389210200681E-15</z>
+      </translationDirection>
+      <node_ids>
+        <node>113</node>
+        <node>34</node>
+        <node>116</node>
+        <node>88</node>
+        <node>131</node>
+        <node>97</node>
+        <node>133</node>
+        <node>42</node>
+        <node>135</node>
+        <node>40</node>
+        <node>137</node>
+        <node>96</node>
+        <node>139</node>
+        <node>95</node>
+        <node>141</node>
+        <node>38</node>
+        <node>143</node>
+        <node>94</node>
+        <node>145</node>
+        <node>93</node>
+        <node>147</node>
+        <node>92</node>
+        <node>149</node>
+        <node>36</node>
+        <node>151</node>
+        <node>91</node>
+        <node>153</node>
+        <node>90</node>
+        <node>155</node>
+        <node>89</node>
+        <node>187</node>
+        <node>192</node>
+        <node>194</node>
+        <node>195</node>
+        <node>198</node>
+        <node>199</node>
+        <node>202</node>
+        <node>204</node>
+        <node>205</node>
+        <node>208</node>
+        <node>210</node>
+        <node>211</node>
+        <node>214</node>
+        <node>216</node>
+        <node>217</node>
+      </node_ids>
+    </parameter>
+  </env_config>
+</parameterOptimitationExperiment>

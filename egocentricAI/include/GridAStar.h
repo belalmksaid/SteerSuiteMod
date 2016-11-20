@@ -1,0 +1,198 @@
+//
+// Copyright (c) 2009-2015 Glen Berseth, Mubbasir Kapadia, Shawn Singh, Petros Faloutsos, Glenn Reinman
+// See license.txt for complete license.
+//
+
+#ifndef __PHASE_DECIMATION_GRID_ASTAR_H__
+#define __PHASE_DECIMATION_GRID_ASTAR_H__
+
+#include "astar/Environment.h"
+//#include "phasedecimation/PhaseDecimationAgent.h"
+//#include "phasedecimation/PhaseDecimationAIModule.h"
+//#include "steersim/SteerSimOptions.h"
+#include "util/GenericException.h"
+#include "SteerLib.h"
+//#include "core/SteerSimOptions.h"
+
+#define TRAVERSAL_COST_THRESHOLD 100 
+
+using namespace SteerLib;
+
+class GridEnvironment : public Environment
+{
+public:
+
+	float canBeTraversed ( int n ) const 
+	{
+		if ( _spatialDatabase->getTraversalCost ( n ) > TRAVERSAL_COST_THRESHOLD ) 
+			return false;
+		return true;
+	}
+
+
+	//=================================================================================
+	//=================================================================================
+	GridEnvironment(GridDatabase2D * db) { _spatialDatabase = db; }
+
+	//=================================================================================
+	//=================================================================================
+	float getHeuristic(int start, int target) const 
+	{
+		unsigned int xstart, zstart, xtarget, ztarget;
+		_spatialDatabase->getGridCoordinatesFromIndex(start, xstart, zstart);
+		_spatialDatabase->getGridCoordinatesFromIndex(target, xtarget, ztarget);
+		// NOTE diffx, and diffz are signed; without the typecasting here, can get overflow.
+		int diffx = ((int)xtarget) - ((int)xstart);
+		int diffz = ((int)ztarget) - ((int)zstart);
+		float score = sqrtf((float)(diffx*diffx + diffz*diffz));
+		//float score = sqrtf((float)(xtarget-xstart)*(float)(xtarget-xstart) + (float)(ztarget-zstart)*(float)(ztarget-zstart));
+		return score;
+	}
+
+	//=================================================================================
+	//=================================================================================
+	void getSuccessors(int nodeId, int lastNodeId, vector<Successor>& result) const
+	{
+		int branchingFactor = 7;
+
+		if (branchingFactor == 7) {
+			result.reserve(7); // there will only be 7 potential neighbors at any given node (the eighth one would be the previous node we came from, doesn't count)
+			result.clear();
+			unsigned int x, z;
+			_spatialDatabase->getGridCoordinatesFromIndex(nodeId, x, z);
+			//
+			// THREE conditions for each potential node to be a "successor":
+			// 1. if x+1, x-1, z+1, or z-1 are still within proper bounds of the grid
+			//     - note because these are unsigned types, we have slightly different but equivalent conditional checks.
+			// 2. if it's not the lastNodeId (i.e. previous node of our path)
+			// 3. if it can be traversed, as told by the database itself
+			// note that for diagonals, the adjacent blocks must also be traversable.
+			//
+			if (x+1 < _spatialDatabase->getNumCellsX()) {
+				// possibly add the node located at (x+1, z)
+				int n = _spatialDatabase->getCellIndexFromGridCoords(x+1,z);
+				if ((n != lastNodeId)&&(canBeTraversed(n))) {
+					result.push_back(Successor(n,_spatialDatabase->getTraversalCost(n)));
+				}
+
+				// possibly add the node located at (x+1, z+1)
+				if (z+1 < _spatialDatabase->getNumCellsZ()) {
+					int n = _spatialDatabase->getCellIndexFromGridCoords(x+1,z+1);
+					int nAdjacent1 = _spatialDatabase->getCellIndexFromGridCoords(x,z+1);
+					int nAdjacent2 = _spatialDatabase->getCellIndexFromGridCoords(x+1,z);
+					if ((n != lastNodeId)&&(canBeTraversed(n))&&(canBeTraversed(nAdjacent1))&&(canBeTraversed(nAdjacent2))) {
+						result.push_back(Successor(n,_spatialDatabase->getTraversalCost(n) * sqrtf(2)));
+					}
+				}
+
+				// possibly add the node located at (x+1, z-1)
+				if (z >= 1) {
+					int n = _spatialDatabase->getCellIndexFromGridCoords(x+1,z-1);
+					int nAdjacent1 = _spatialDatabase->getCellIndexFromGridCoords(x,z-1);
+					int nAdjacent2 = _spatialDatabase->getCellIndexFromGridCoords(x+1,z);
+					if ((n != lastNodeId)&&(canBeTraversed(n))&&(canBeTraversed(nAdjacent1))&&(canBeTraversed(nAdjacent2))) {
+						result.push_back(Successor(n,_spatialDatabase->getTraversalCost(n) * sqrtf(2)));
+					}
+				}
+			}
+
+			if (x >= 1) {
+				// possibly add the node located at (x-1, z)
+				int n = _spatialDatabase->getCellIndexFromGridCoords(x-1,z);
+				if ((n != lastNodeId)&&(canBeTraversed(n))) {
+					result.push_back(Successor(n,_spatialDatabase->getTraversalCost(n)));
+				}
+
+				// possibly add the node located at (x-1, z+1)
+				if (z+1 < _spatialDatabase->getNumCellsZ()) {
+					int n = _spatialDatabase->getCellIndexFromGridCoords(x-1,z+1);
+					int nAdjacent1 = _spatialDatabase->getCellIndexFromGridCoords(x,z+1);
+					int nAdjacent2 = _spatialDatabase->getCellIndexFromGridCoords(x-1,z);
+					if ((n != lastNodeId)&&(canBeTraversed(n))&&(canBeTraversed(nAdjacent1))&&(canBeTraversed(nAdjacent2))) {
+						result.push_back(Successor(n,_spatialDatabase->getTraversalCost(n) * sqrtf(2)));
+					}
+				}
+
+				// possibly add the node located at (x-1, z-1)
+				if (z >= 1) {
+					int n = _spatialDatabase->getCellIndexFromGridCoords(x-1,z-1);
+					int nAdjacent1 = _spatialDatabase->getCellIndexFromGridCoords(x,z-1);
+					int nAdjacent2 = _spatialDatabase->getCellIndexFromGridCoords(x-1,z);
+					if ((n != lastNodeId)&&(canBeTraversed(n))&&(canBeTraversed(nAdjacent1))&&(canBeTraversed(nAdjacent2))) {
+						result.push_back(Successor(n,_spatialDatabase->getTraversalCost(n) * sqrtf(2)));
+					}
+				}
+			}
+
+			// possibly add the node located at (x, z+1)
+			if (z+1 < _spatialDatabase->getNumCellsZ()) {
+				int n = _spatialDatabase->getCellIndexFromGridCoords(x,z+1);
+				if ((n != lastNodeId)&&(canBeTraversed(n))) {
+					result.push_back(Successor(n,_spatialDatabase->getTraversalCost(n)));
+				}
+			}
+
+			// possibly add the node located at (x, z-1)
+			if (z >= 1) {
+				int n = _spatialDatabase->getCellIndexFromGridCoords(x,z-1);
+				if ((n != lastNodeId)&&(canBeTraversed(n))) {
+					result.push_back(Successor(n,_spatialDatabase->getTraversalCost(n)));
+				}
+			}
+		}
+		else if (branchingFactor == 3) {
+			result.reserve(3); // there will only be 3 potential neighbors at any given node (the fourth one would be the previous node we came from, doesn't count)
+			result.clear();
+			unsigned int x, z;
+			_spatialDatabase->getGridCoordinatesFromIndex(nodeId, x, z);
+			// THREE conditions for each potential node to be a "successor":
+			// 1. if x+1, x-1, z+1, or z-1 are still within proper bounds of the grid
+			//     - note because these are unsigned types, we have slightly different but equivalent conditional checks.
+			// 2. if it's not the lastNodeId (i.e. previous node of our path)
+			// 3. if its not blocked, as told by the database itself
+			if (x+1 < _spatialDatabase->getNumCellsX()) {
+				int n = _spatialDatabase->getCellIndexFromGridCoords(x+1,z);
+				if ((n != lastNodeId)&&(canBeTraversed(n))) {
+					result.push_back(Successor(n,_spatialDatabase->getTraversalCost(n)));
+				}
+			}
+			if (x >= 1) {
+				int n = _spatialDatabase->getCellIndexFromGridCoords(x-1,z);
+				if ((n != lastNodeId)&&(canBeTraversed(n))) {
+					result.push_back(Successor(n,_spatialDatabase->getTraversalCost(n)));
+				}
+			}
+			if (z+1 < _spatialDatabase->getNumCellsZ()) {
+				int n = _spatialDatabase->getCellIndexFromGridCoords(x,z+1);
+				if ((n != lastNodeId)&&(canBeTraversed(n))) {
+					result.push_back(Successor(n,_spatialDatabase->getTraversalCost(n)));
+				}
+			}
+			if (z >= 1) {
+				int n = _spatialDatabase->getCellIndexFromGridCoords(x,z-1);
+				if ((n != lastNodeId)&&(canBeTraversed(n))) {
+					result.push_back(Successor(n,_spatialDatabase->getTraversalCost(n)));
+				}
+			}
+		}
+		else {
+			throw GenericException("ERROR: invalid branching factor.\n");
+		}
+	}
+
+	//=================================================================================
+	//=================================================================================
+	float getMaxCost() const { return 1.0f; }  // TODO: what is the meaning of "max" in this case?   max possible?  or max of something else?
+	float getMinCost() const { return 1.0f; }
+	int getNumberNodes() const { return _spatialDatabase->getNumCellsX() * _spatialDatabase->getNumCellsZ(); }
+	bool isValidNodeId(int nodeId) const
+	{
+		// std::cout << "Number of nodes in GridEnvironment: " << this->getNumberNodes() << std::endl;
+		return nodeId >= 0 && nodeId < getNumberNodes();
+	}
+
+	GridDatabase2D * _spatialDatabase;
+};
+
+
+#endif

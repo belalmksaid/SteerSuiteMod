@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Filename: D:\playground\SteerSuite\steeropt\data\Maze\mazeOuterWallParams.xml-->
+<!--Creation Date: 05.11.2016-08.04.27-->
+<!--Stores Optimization Parameters-->
+<!-- These nodes need to be constrained in the optimization
+They are the outer walls of the maze. -->
+<parameterOptimitationExperiment>
+  <env_config>
+    <parameter type="float" name="p-1">
+      <min type="float">-0.848694455467944</min>
+      <max type="float">0.848694455467949</max>
+      <original type="float">0</original>
+      <discretization type="float">20</discretization>
+      <translationDirection>
+        <x>-2.55184212014519E-15</x>
+        <y>0</y>
+        <z>1</z>
+      </translationDirection>
+      <node_ids>
+        <node>2</node>
+        <node>3</node>
+        <node>8</node>
+        <node>9</node>
+        <node>35</node>
+        <node>4</node>
+      </node_ids>
+    </parameter>
+    <parameter type="float" name="p-2">
+      <min type="float">-1.12246686045761</min>
+      <max type="float">1.12246686045761</max>
+      <original type="float">0</original>
+      <discretization type="float">20</discretization>
+      <translationDirection>
+        <x>0</x>
+        <y>0</y>
+        <z>-1</z>
+      </translationDirection>
+      <node_ids>
+        <node>6</node>
+        <node>7</node>
+        <node>0</node>
+      </node_ids>
+    </parameter>
+    <parameter type="float" name="p-3">
+      <min type="float">-1.6973889109359</min>
+      <max type="float">1.6973889109359</max>
+      <original type="float">0</original>
+      <discretization type="float">20</discretization>
+      <translationDirection>
+        <x>-1</x>
+        <y>0</y>
+        <z>3.50878291519962E-15</z>
+      </translationDirection>
+      <node_ids>
+        <node>0</node>
+        <node>1</node>
+        <node>17</node>
+        <node>2</node>
+      </node_ids>
+    </parameter>
+    <parameter type="float" name="p-4">
+      <min type="float">-1.06771237945968</min>
+      <max type="float">1.06771237945968</max>
+      <original type="float">0</original>
+      <discretization type="float">20</discretization>
+      <translationDirection>
+        <x>-1</x>
+        <y>0</y>
+        <z>-1.01419366313462E-15</z>
+      </translationDirection>
+      <node_ids>
+        <node>4</node>
+        <node>5</node>
+        <node>10</node>
+        <node>6</node>
+      </node_ids>
+    </parameter>
+  </env_config>
+</parameterOptimitationExperiment>

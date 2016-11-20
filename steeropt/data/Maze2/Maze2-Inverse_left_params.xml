@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Filename: E:\playground\SteerSuite\steeropt\data\Maze2\Maze2-Inverse_left_params.xml-->
+<!--Creation Date: 05.12.2016-11.22.16-->
+<!--Stores Optimization Parameters-->
+<parameterOptimitationExperiment>
+  <env_config>
+    <parameter type="float" name="p-1">
+      <min type="float">-0.27468693253561</min>
+      <max type="float">0.274686932535608</max>
+      <original type="float">0</original>
+      <discretization type="float">20</discretization>
+      <translationDirection>
+        <x>3.94218654415974E-15</x>
+        <y>0</y>
+        <z>1</z>
+      </translationDirection>
+      <node_ids>
+        <node>0</node>
+        <node>1</node>
+        <node>2</node>
+        <node>3</node>
+        <node>4</node>
+        <node>5</node>
+        <node>46</node>
+        <node>47</node>
+        <node>48</node>
+        <node>37</node>
+        <node>49</node>
+        <node>51</node>
+        <node>52</node>
+        <node>53</node>
+        <node>54</node>
+        <node>39</node>
+        <node>55</node>
+        <node>56</node>
+        <node>57</node>
+        <node>58</node>
+        <node>41</node>
+        <node>59</node>
+        <node>60</node>
+        <node>61</node>
+        <node>43</node>
+        <node>45</node>
+        <node>63</node>
+        <node>64</node>
+        <node>65</node>
+        <node>66</node>
+        <node>67</node>
+        <node>68</node>
+        <node>69</node>
+        <node>70</node>
+        <node>71</node>
+        <node>72</node>
+        <node>73</node>
+        <node>74</node>
+        <node>75</node>
+        <node>76</node>
+        <node>77</node>
+        <node>78</node>
+        <node>79</node>
+        <node>80</node>
+        <node>81</node>
+        <node>82</node>
+        <node>83</node>
+        <node>84</node>
+        <node>85</node>
+        <node>86</node>
+        <node>87</node>
+        <node>88</node>
+        <node>89</node>
+        <node>90</node>
+        <node>91</node>
+        <node>92</node>
+        <node>93</node>
+        <node>94</node>
+        <node>114</node>
+        <node>115</node>
+        <node>95</node>
+        <node>97</node>
+        <node>116</node>
+        <node>99</node>
+        <node>117</node>
+        <node>101</node>
+        <node>118</node>
+        <node>119</node>
+        <node>103</node>
+        <node>120</node>
+        <node>105</node>
+        <node>121</node>
+        <node>107</node>
+        <node>122</node>
+        <node>123</node>
+        <node>109</node>
+        <node>124</node>
+        <node>111</node>
+        <node>125</node>
+        <node>126</node>
+        <node>127</node>
+        <node>113</node>
+        <node>128</node>
+      </node_ids>
+    </parameter>
+  </env_config>
+</parameterOptimitationExperiment>

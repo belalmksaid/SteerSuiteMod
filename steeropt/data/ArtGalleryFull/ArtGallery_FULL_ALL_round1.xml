@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Filename: D:\playground\SteerSuite\steeropt\data\ArtGalleryFull\ArtGallery_FULL_ALL_round1.xml-->
+<!--Creation Date: 05.14.2016-10.03.05-->
+<!--Stores Optimization Parameters-->
+<parameterOptimitationExperiment>
+  <env_config>
+    <visibilityGraph>
+      <region>
+        <point>
+          <x>-37.5401464740237</x>
+          <y>0</y>
+          <z>-10.4593374011408</z>
+        </point>
+        <point>
+          <x>59.9546369373811</x>
+          <y>0</y>
+          <z>14.6926634948592</z>
+        </point>
+      </region>
+    </visibilityGraph>
+    <queryRegions>
+      <region>
+        <point>
+          <x>-35.7224</x>
+          <y>0</y>
+          <z>-6.845121</z>
+        </point>
+        <point>
+          <x>58.00007</x>
+          <y>0</y>
+          <z>11.07845</z>
+        </point>
+      </region>
+      <region>
+        <point>
+          <x>-31.34413</x>
+          <y>0</y>
+          <z>10.94163</z>
+        </point>
+        <point>
+          <x>-15.6097</x>
+          <y>0</y>
+          <z>16.14083</z>
+        </point>
+      </region>
+      <region>
+        <point>
+          <x>-31.34413</x>
+          <y>0</y>
+          <z>-11.9075</z>
+        </point>
+        <point>
+          <x>-15.74652</x>
+          <y>0</y>
+          <z>-6.297836</z>
+        </point>
+      </region>
+      <region>
+        <point>
+          <x>36.41317</x>
+          <y>0</y>
+          <z>11.02905</z>
+        </point>
+        <point>
+          <x>52.24655</x>
+          <y>0</y>
+          <z>16.03848</z>
+        </point>
+      </region>
+      <region>
+        <point>
+          <x>36.36844</x>
+          <y>0</y>
+          <z>-11.87121</z>
+        </point>
+        <point>
+          <x>52.33601</x>
+          <y>0</y>
+          <z>-6.727598</z>
+        </point>
+      </region>
+    </queryRegions>
+    <parameter type="float" name="p-1">
+      <min type="float">-0.558505360638185</min>
+      <max type="float">1.02974425867665</max>
+      <original type="float">0</original>
+      <discretization type="float">20</discretization>
+      <rotationOrigin>
+        <x>-22.4833514732514</x>
+        <y>0</y>
+        <z>-0.883336572303634</z>
+      </rotationOrigin>
+      <node_ids>
+        <node>36</node>
+        <node>38</node>
+      </node_ids>
+    </parameter>
+    <parameter type="float" name="p-2">
+      <min type="float">-2.17869581818309</min>
+      <max type="float">2.17869581818309</max>
+      <original type="float">0</original>
+      <discretization type="float">20</discretization>
+      <translationDirection>
+        <x>0</x>
+        <y>0</y>
+        <z>-1</z>
+      </translationDirection>
+      <node_ids>
+        <node>21</node>
+        <node>29</node>
+        <node>30</node>
+      </node_ids>
+    </parameter>
+    <parameter type="float" name="p-3">
+      <min type="float">-2.76079012075109</min>
+      <max type="float">2.76079012075109</max>
+      <original type="float">0</original>
+      <discretization type="float">20</discretization>
+      <translationDirection>
+        <x>0</x>
+        <y>0</y>
+        <z>-1</z>
+      </translationDirection>
+      <node_ids>
+        <node>31</node>
+        <node>32</node>
+        <node>33</node>
+      </node_ids>
+    </parameter>
+    <parameter type="float" name="p-4">
+      <min type="float">-3.91639732438614</min>
+      <max type="float">3.91639732438614</max>
+      <original type="float">0</original>
+      <discretization type="float">20</discretization>
+      <translationDirection>
+        <x>1</x>
+        <y>0</y>
+        <z>0</z>
+      </translationDirection>
+      <node_ids>
+        <node>32</node>
+        <node>33</node>
+      </node_ids>
+    </parameter>
+    <parameter type="float" name="p-5">
+      <min type="float">-3.45819871019307</min>
+      <max type="float">3.45819871019307</max>
+      <original type="float">0</original>
+      <discretization type="float">20</discretization>
+      <translationDirection>
+        <x>-1</x>
+        <y>0</y>
+        <z>0</z>
+      </translationDirection>
+      <node_ids>
+        <node>17</node>
+        <node>28</node>
+      </node_ids>
+    </parameter>
+    <parameter type="float" name="p-6">
+      <min type="float">-1.34390352403563</min>
+      <max type="float">1.02974425867665</max>
+      <original type="float">0</original>
+      <discretization type="float">20</discretization>
+      <rotationOrigin>
+        <x>-15.4833522029258</x>
+        <y>0</y>
+        <z>11.1166642885335</z>
+      </rotationOrigin>
+      <node_ids>
+        <node>0</node>
+      </node_ids>
+    </parameter>
+    <parameter type="float" name="p-7">
+      <min type="float">-1.5707963267949</min>
+      <max type="float">1.37881010907552</max>
+      <original type="float">0</original>
+      <discretization type="float">20</discretization>
+      <rotationOrigin>
+        <x>-15.4833522029258</x>
+        <y>0</y>
+        <z>11.1166642885335</z>
+      </rotationOrigin>
+      <node_ids>
+        <node>80</node>
+      </node_ids>
+    </parameter>
+    <parameter type="float" name="p-8">
+      <min type="float">-4.64091313988126</min>
+      <max type="float">4.64091313988126</max>
+      <original type="float">0</original>
+      <discretization type="float">20</discretization>
+      <translationDirection>
+        <x>-1</x>
+        <y>0</y>
+        <z>0</z>
+      </translationDirection>
+      <node_ids>
+        <node>25</node>
+        <node>34</node>
+        <node>35</node>
+      </node_ids>
+    </parameter>
+    <parameter type="float" name="p-9">
+      <min type="float">-3.5</min>
+      <max type="float">3.5</max>
+      <original type="float">0</original>
+      <discretization type="float">20</discretization>
+      <translationDirection>
+        <x>0</x>
+        <y>0</y>
+        <z>1</z>
+      </translationDirection>
+      <node_ids>
+        <node>34</node>
+        <node>35</node>
+      </node_ids>
+    </parameter>
+  </env_config>
+</parameterOptimitationExperiment>

@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Filename: E:\playground\SteerSuite\steeropt\data\Maze2\maze2_params_init_fixed_gaps_course.xml-->
+<!--Creation Date: 05.17.2016-09.36.41-->
+<!--Stores Optimization Parameters-->
+<parameterOptimitationExperiment>
+  <env_config>
+    <visibilityGraph>
+      <region>
+        <point>
+          <x>-2.04133184732785</x>
+          <y>0</y>
+          <z>-14.3020026321141</z>
+        </point>
+        <point>
+          <x>17.2066681526722</x>
+          <y>0</y>
+          <z>5.84999736788593</z>
+        </point>
+      </region>
+    </visibilityGraph>
+    <queryRegions>
+      <region>
+        <point>
+          <x>-0.4946403</x>
+          <y>0</y>
+          <z>-11.19206</z>
+        </point>
+        <point>
+          <x>15.54355</x>
+          <y>0</y>
+          <z>4.351306</z>
+        </point>
+      </region>
+    </queryRegions>
+    <referenceRegions>
+      <region>
+        <point>
+          <x>-0.4946403</x>
+          <y>0</y>
+          <z>-11.19206</z>
+        </point>
+        <point>
+          <x>15.54355</x>
+          <y>0</y>
+          <z>4.351306</z>
+        </point>
+      </region>
+      <region>
+        <point>
+          <x>-0.4364255</x>
+          <y>0</y>
+          <z>-12.88029</z>
+        </point>
+        <point>
+          <x>2.678068</x>
+          <y>0</y>
+          <z>-10.84277</z>
+        </point>
+      </region>
+      <region>
+        <point>
+          <x>12.54548</x>
+          <y>0</y>
+          <z>-12.82207</z>
+        </point>
+        <point>
+          <x>15.48533</x>
+          <y>0</y>
+          <z>-10.43526</z>
+        </point>
+      </region>
+    </referenceRegions>
+    <parameter type="float" name="p-1">
+      <min type="float">-2.34314714624764</min>
+      <max type="float">2.34314714624764</max>
+      <original type="float">0</original>
+      <discretization type="float">20</discretization>
+      <translationDirection>
+        <x>-1</x>
+        <y>0</y>
+        <z>2.94615639497173E-15</z>
+      </translationDirection>
+      <node_ids>
+        <node>81</node>
+        <node>12</node>
+        <node>82</node>
+        <node>70</node>
+        <node>109</node>
+        <node>110</node>
+      </node_ids>
+    </parameter>
+    <parameter type="float" name="p-2">
+      <min type="float">-2.34314714624764</min>
+      <max type="float">2.34314714624764</max>
+      <original type="float">0</original>
+      <discretization type="float">20</discretization>
+      <translationDirection>
+        <x>-1</x>
+        <y>0</y>
+        <z>2.70786433361372E-15</z>
+      </translationDirection>
+      <node_ids>
+        <node>83</node>
+        <node>10</node>
+        <node>94</node>
+        <node>71</node>
+        <node>111</node>
+        <node>112</node>
+      </node_ids>
+    </parameter>
+    <parameter type="float" name="p-3">
+      <min type="float">-2.31403972828183</min>
+      <max type="float">2.31403972828183</max>
+      <original type="float">0</original>
+      <discretization type="float">20</discretization>
+      <translationDirection>
+        <x>-1</x>
+        <y>0</y>
+        <z>3.21719261036807E-15</z>
+      </translationDirection>
+      <node_ids>
+        <node>84</node>
+        <node>14</node>
+        <node>93</node>
+        <node>21</node>
+        <node>113</node>
+        <node>114</node>
+      </node_ids>
+    </parameter>
+    <parameter type="float" name="p-4">
+      <min type="float">-2.32859343726474</min>
+      <max type="float">2.32859343726474</max>
+      <original type="float">0</original>
+      <discretization type="float">20</discretization>
+      <translationDirection>
+        <x>-1</x>
+        <y>0</y>
+        <z>3.13895633552503E-15</z>
+      </translationDirection>
+      <node_ids>
+        <node>85</node>
+        <node>8</node>
+        <node>92</node>
+        <node>72</node>
+        <node>115</node>
+        <node>116</node>
+      </node_ids>
+    </parameter>
+    <parameter type="float" name="p-5">
+      <min type="float">-2.29948601929893</min>
+      <max type="float">2.29948601929893</max>
+      <original type="float">0</original>
+      <discretization type="float">20</discretization>
+      <translationDirection>
+        <x>-1</x>
+        <y>0</y>
+        <z>3.29641921780406E-15</z>
+      </translationDirection>
+      <node_ids>
+        <node>86</node>
+        <node>18</node>
+        <node>91</node>
+        <node>23</node>
+        <node>117</node>
+        <node>118</node>
+      </node_ids>
+    </parameter>
+    <parameter type="float" name="p-6">
+      <min type="float">-2.29948601929893</min>
+      <max type="float">2.29948601929893</max>
+      <original type="float">0</original>
+      <discretization type="float">20</discretization>
+      <translationDirection>
+        <x>-1</x>
+        <y>0</y>
+        <z>2.8255021866892E-15</z>
+      </translationDirection>
+      <node_ids>
+        <node>87</node>
+        <node>16</node>
+        <node>90</node>
+        <node>73</node>
+        <node>119</node>
+        <node>120</node>
+      </node_ids>
+    </parameter>
+    <parameter type="float" name="p-7">
+      <min type="float">-2.29948601929893</min>
+      <max type="float">2.29948601929893</max>
+      <original type="float">0</original>
+      <discretization type="float">20</discretization>
+      <translationDirection>
+        <x>-1</x>
+        <y>0</y>
+        <z>3.06096070224663E-15</z>
+      </translationDirection>
+      <node_ids>
+        <node>88</node>
+        <node>20</node>
+        <node>89</node>
+        <node>25</node>
+        <node>121</node>
+        <node>122</node>
+      </node_ids>
+    </parameter>
+    <parameter type="float" name="p-8">
+      <min type="float">-2.29948601929893</min>
+      <max type="float">2.29948601929893</max>
+      <original type="float">0</original>
+      <discretization type="float">20</discretization>
+      <translationDirection>
+        <x>-1</x>
+        <y>0</y>
+        <z>3.23755458891471E-15</z>
+      </translationDirection>
+      <node_ids>
+        <node>95</node>
+        <node>74</node>
+        <node>96</node>
+        <node>69</node>
+        <node>135</node>
+        <node>136</node>
+      </node_ids>
+    </parameter>
+    <parameter type="float" name="p-9">
+      <min type="float">-2.29948601929893</min>
+      <max type="float">2.29948601929893</max>
+      <original type="float">0</original>
+      <discretization type="float">20</discretization>
+      <translationDirection>
+        <x>-1</x>
+        <y>0</y>
+        <z>3.23755458891471E-15</z>
+      </translationDirection>
+      <node_ids>
+        <node>97</node>
+        <node>75</node>
+        <node>98</node>
+        <node>63</node>
+        <node>133</node>
+        <node>134</node>
+      </node_ids>
+    </parameter>
+    <parameter type="float" name="p-10">
+      <min type="float">-2.27037860133312</min>
+      <max type="float">2.27037860133312</max>
+      <original type="float">0</original>
+      <discretization type="float">20</discretization>
+      <translationDirection>
+        <x>-1</x>
+        <y>0</y>
+        <z>3.15982309179158E-15</z>
+      </translationDirection>
+      <node_ids>
+        <node>99</node>
+        <node>76</node>
+        <node>100</node>
+        <node>64</node>
+        <node>131</node>
+        <node>132</node>
+      </node_ids>
+    </parameter>
+    <parameter type="float" name="p-11">
+      <min type="float">-2.25582489235021</min>
+      <max type="float">2.25582489235021</max>
+      <original type="float">0</original>
+      <discretization type="float">20</discretization>
+      <translationDirection>
+        <x>-1</x>
+        <y>0</y>
+        <z>3.24021299150971E-15</z>
+      </translationDirection>
+      <node_ids>
+        <node>101</node>
+        <node>77</node>
+        <node>102</node>
+        <node>68</node>
+        <node>129</node>
+        <node>130</node>
+      </node_ids>
+    </parameter>
+    <parameter type="float" name="p-12">
+      <min type="float">-2.28493231031602</min>
+      <max type="float">2.28493231031602</max>
+      <original type="float">0</original>
+      <discretization type="float">20</discretization>
+      <translationDirection>
+        <x>-1</x>
+        <y>0</y>
+        <z>3.31741551855441E-15</z>
+      </translationDirection>
+      <node_ids>
+        <node>103</node>
+        <node>78</node>
+        <node>104</node>
+        <node>65</node>
+        <node>127</node>
+        <node>128</node>
+      </node_ids>
+    </parameter>
+    <parameter type="float" name="p-13">
+      <min type="float">-2.28493231031602</min>
+      <max type="float">2.28493231031602</max>
+      <original type="float">0</original>
+      <discretization type="float">20</discretization>
+      <translationDirection>
+        <x>-1</x>
+        <y>0</y>
+        <z>3.31741551855441E-15</z>
+      </translationDirection>
+      <node_ids>
+        <node>105</node>
+        <node>79</node>
+        <node>106</node>
+        <node>66</node>
+        <node>125</node>
+        <node>126</node>
+      </node_ids>
+    </parameter>
+    <parameter type="float" name="p-14">
+      <min type="float">-2.24127118336731</min>
+      <max type="float">2.24127118336731</max>
+      <original type="float">0</original>
+      <discretization type="float">20</discretization>
+      <translationDirection>
+        <x>-1</x>
+        <y>0</y>
+        <z>3.14046617503226E-15</z>
+      </translationDirection>
+      <node_ids>
+        <node>107</node>
+        <node>80</node>
+        <node>108</node>
+        <node>67</node>
+        <node>123</node>
+        <node>124</node>
+      </node_ids>
+    </parameter>
+  </env_config>
+</parameterOptimitationExperiment>

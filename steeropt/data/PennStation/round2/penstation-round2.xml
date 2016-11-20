@@ -1,0 +1,449 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Filename: D:\playground\SteerSuite\steeropt\data\PennStation\round2\penstation-round2.xml-->
+<!--Creation Date: 05.11.2016-02.55.26-->
+<!--Stores Optimization Parameters-->
+<parameterOptimitationExperiment>
+  <env_config>
+    <visibilityGraph>
+      <region>
+        <point>
+          <x>-162.933010899193</x>
+          <y>0</y>
+          <z>-64.0062003299706</z>
+        </point>
+        <point>
+          <x>84.9476034353982</x>
+          <y>0</y>
+          <z>81.634599789343</z>
+        </point>
+      </region>
+    </visibilityGraph>
+    <queryRegions>
+      <region>
+        <point>
+          <x>-99.72448</x>
+          <y>0</y>
+          <z>39.25425</z>
+        </point>
+        <point>
+          <x>-89.19021</x>
+          <y>0</y>
+          <z>-62.18065</z>
+        </point>
+      </region>
+      <region>
+        <point>
+          <x>-48.58226</x>
+          <y>0</y>
+          <z>39.76397</z>
+        </point>
+        <point>
+          <x>-36.85863</x>
+          <y>0</y>
+          <z>-2.882865</z>
+        </point>
+      </region>
+      <region>
+        <point>
+          <x>-161.1461</x>
+          <y>0</y>
+          <z>37.06391</z>
+        </point>
+        <point>
+          <x>-151.9626</x>
+          <y>0</y>
+          <z>-0.2563136</z>
+        </point>
+      </region>
+      <region>
+        <point>
+          <x>5.91563</x>
+          <y>0</y>
+          <z>-8.267462</z>
+        </point>
+        <point>
+          <x>24.47805</x>
+          <y>0</y>
+          <z>-62.49703</z>
+        </point>
+      </region>
+      <region>
+        <point>
+          <x>0.05381425</x>
+          <y>0</y>
+          <z>35.10997</z>
+        </point>
+        <point>
+          <x>5.720236</x>
+          <y>0</y>
+          <z>-0.06091975</z>
+        </point>
+      </region>
+      <region>
+        <point>
+          <x>-161.1808</x>
+          <y>0</y>
+          <z>60.31545</z>
+        </point>
+        <point>
+          <x>-152.8803</x>
+          <y>0</y>
+          <z>55.32046</z>
+        </point>
+      </region>
+      <region>
+        <point>
+          <x>-84.3571</x>
+          <y>0</y>
+          <z>78.74844</z>
+        </point>
+        <point>
+          <x>-80.56844</x>
+          <y>0</y>
+          <z>65.63383</z>
+        </point>
+      </region>
+      <region>
+        <point>
+          <x>-53.17347</x>
+          <y>0</y>
+          <z>74.76549</z>
+        </point>
+        <point>
+          <x>-48.60764</x>
+          <y>0</y>
+          <z>65.63383</z>
+        </point>
+      </region>
+      <region>
+        <point>
+          <x>10.74813</x>
+          <y>0</y>
+          <z>71.17111</z>
+        </point>
+        <point>
+          <x>33.67441</x>
+          <y>0</y>
+          <z>65.3424</z>
+        </point>
+      </region>
+    </queryRegions>
+    <referenceRegions>
+      <region>
+        <point>
+          <x>-160.9507</x>
+          <y>0</y>
+          <z>55.04015</z>
+        </point>
+        <point>
+          <x>-124.4121</x>
+          <y>0</y>
+          <z>48.98294</z>
+        </point>
+      </region>
+      <region>
+        <point>
+          <x>-124.4121</x>
+          <y>0</y>
+          <z>50.54609</z>
+        </point>
+        <point>
+          <x>49.87925</x>
+          <y>0</y>
+          <z>38.82246</z>
+        </point>
+      </region>
+      <region>
+        <point>
+          <x>-41.36968</x>
+          <y>0</y>
+          <z>-0.06091975</z>
+        </point>
+        <point>
+          <x>10.40969</x>
+          <y>0</y>
+          <z>-6.508917</z>
+        </point>
+      </region>
+      <region>
+        <point>
+          <x>5.524842</x>
+          <y>0</y>
+          <z>39.01785</z>
+        </point>
+        <point>
+          <x>17.24847</x>
+          <y>0</y>
+          <z>6.777865</z>
+        </point>
+      </region>
+      <region>
+        <point>
+          <x>10.40969</x>
+          <y>0</y>
+          <z>-2.210252</z>
+        </point>
+        <point>
+          <x>80.1653</x>
+          <y>0</y>
+          <z>-6.118129</z>
+        </point>
+      </region>
+      <region>
+        <point>
+          <x>-89.24118</x>
+          <y>0</y>
+          <z>-2.796434</z>
+        </point>
+        <point>
+          <x>-41.17429</x>
+          <y>0</y>
+          <z>-7.290493</z>
+        </point>
+      </region>
+      <region>
+        <point>
+          <x>-160.7553</x>
+          <y>0</y>
+          <z>48.98294</z>
+        </point>
+        <point>
+          <x>-151.9626</x>
+          <y>0</y>
+          <z>37.25931</z>
+        </point>
+      </region>
+      <region>
+        <point>
+          <x>34.05235</x>
+          <y>0</y>
+          <z>79.07359</z>
+        </point>
+        <point>
+          <x>45.97137</x>
+          <y>0</y>
+          <z>50.93688</z>
+        </point>
+      </region>
+      <region>
+        <point>
+          <x>-72.43731</x>
+          <y>0</y>
+          <z>70.28087</z>
+        </point>
+        <point>
+          <x>-65.98931</x>
+          <y>0</y>
+          <z>50.74148</z>
+        </point>
+      </region>
+      <region>
+        <point>
+          <x>49.87925</x>
+          <y>0</y>
+          <z>53.86778</z>
+        </point>
+        <point>
+          <x>78.99294</x>
+          <y>0</y>
+          <z>47.029</z>
+        </point>
+      </region>
+      <region>
+        <point>
+          <x>17.63926</x>
+          <y>0</y>
+          <z>38.62706</z>
+        </point>
+        <point>
+          <x>50.07464</x>
+          <y>0</y>
+          <z>31.98367</z>
+        </point>
+      </region>
+      <region>
+        <point>
+          <x>17.44387</x>
+          <y>0</y>
+          <z>20.84622</z>
+        </point>
+        <point>
+          <x>28.58132</x>
+          <y>0</y>
+          <z>13.61665</z>
+        </point>
+      </region>
+      <region>
+        <point>
+          <x>-65.70521</x>
+          <y>0</y>
+          <z>70.19966</z>
+        </point>
+        <point>
+          <x>-53.56205</x>
+          <y>0</y>
+          <z>65.63383</z>
+        </point>
+      </region>
+      <region>
+        <point>
+          <x>-80.56844</x>
+          <y>0</y>
+          <z>70.39395</z>
+        </point>
+        <point>
+          <x>-72.50538</x>
+          <y>0</y>
+          <z>65.3424</z>
+        </point>
+      </region>
+    </referenceRegions>
+    <parameter type="float" name="p-1">
+      <min type="float">-3.16778084345792</min>
+      <max type="float">3.16778084345792</max>
+      <original type="float">0</original>
+      <discretization type="float">20</discretization>
+      <translationDirection>
+        <x>0</x>
+        <y>0</y>
+        <z>1</z>
+      </translationDirection>
+      <node_ids>
+        <node>18</node>
+        <node>19</node>
+        <node>20</node>
+        <node>21</node>
+      </node_ids>
+    </parameter>
+    <parameter type="float" name="p-2">
+      <min type="float">-1.50575182759033</min>
+      <max type="float">1.50575182759033</max>
+      <original type="float">0</original>
+      <discretization type="float">20</discretization>
+      <translationDirection>
+        <x>1</x>
+        <y>0</y>
+        <z>0</z>
+      </translationDirection>
+      <node_ids>
+        <node>23</node>
+        <node>24</node>
+        <node>27</node>
+        <node>28</node>
+      </node_ids>
+    </parameter>
+    <parameter type="float" name="p-3">
+      <min type="float">-3.79633425095506</min>
+      <max type="float">3.79633425095505</max>
+      <original type="float">0</original>
+      <discretization type="float">20</discretization>
+      <translationDirection>
+        <x>0.0917874363718086</x>
+        <y>0</y>
+        <z>-0.995778623251318</z>
+      </translationDirection>
+      <node_ids>
+        <node>83</node>
+        <node>84</node>
+        <node>85</node>
+        <node>86</node>
+        <node>87</node>
+        <node>88</node>
+      </node_ids>
+    </parameter>
+    <parameter type="float" name="p-4">
+      <min type="float">-5.72617787235343</min>
+      <max type="float">5.72617787235343</max>
+      <original type="float">0</original>
+      <discretization type="float">20</discretization>
+      <translationDirection>
+        <x>-1</x>
+        <y>0</y>
+        <z>0</z>
+      </translationDirection>
+      <node_ids>
+        <node>78</node>
+        <node>79</node>
+        <node>80</node>
+        <node>81</node>
+        <node>82</node>
+        <node>83</node>
+      </node_ids>
+    </parameter>
+    <parameter type="float" name="p-5">
+      <min type="float">-2.13949997118922</min>
+      <max type="float">2.13949997118922</max>
+      <original type="float">0</original>
+      <discretization type="float">20</discretization>
+      <translationDirection>
+        <x>0</x>
+        <y>0</y>
+        <z>1</z>
+      </translationDirection>
+      <node_ids>
+        <node>73</node>
+        <node>74</node>
+      </node_ids>
+    </parameter>
+    <parameter type="float" name="p-6">
+      <min type="float">-4.48397660926155</min>
+      <max type="float">4.48397660926155</max>
+      <original type="float">0</original>
+      <discretization type="float">20</discretization>
+      <translationDirection>
+        <x>0.451906490679075</x>
+        <y>0</y>
+        <z>0.892065313574137</z>
+      </translationDirection>
+      <node_ids>
+        <node>49</node>
+        <node>50</node>
+      </node_ids>
+    </parameter>
+    <parameter type="float" name="p-7">
+      <min type="float">-3.57749960012842</min>
+      <max type="float">3.5774996001284</max>
+      <original type="float">0</original>
+      <discretization type="float">20</discretization>
+      <translationDirection>
+        <x>-1</x>
+        <y>0</y>
+        <z>0</z>
+      </translationDirection>
+      <node_ids>
+        <node>41</node>
+        <node>42</node>
+      </node_ids>
+    </parameter>
+    <parameter type="float" name="p-8">
+      <min type="float">-2.49999999999999</min>
+      <max type="float">2.50000000000002</max>
+      <original type="float">0</original>
+      <discretization type="float">20</discretization>
+      <translationDirection>
+        <x>1</x>
+        <y>0</y>
+        <z>0</z>
+      </translationDirection>
+      <node_ids>
+        <node>45</node>
+        <node>46</node>
+      </node_ids>
+    </parameter>
+    <parameter type="float" name="p-9">
+      <min type="float">-3.5</min>
+      <max type="float">3.5</max>
+      <original type="float">0</original>
+      <discretization type="float">20</discretization>
+      <translationDirection>
+        <x>-1</x>
+        <y>0</y>
+        <z>0</z>
+      </translationDirection>
+      <node_ids>
+        <node>58</node>
+        <node>59</node>
+      </node_ids>
+    </parameter>
+  </env_config>
+</parameterOptimitationExperiment>
